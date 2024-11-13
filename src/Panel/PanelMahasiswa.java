@@ -38,6 +38,7 @@ public class PanelMahasiswa extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -48,9 +49,10 @@ public class PanelMahasiswa extends javax.swing.JPanel {
         FieldNama = new javax.swing.JTextField();
         LabelNama = new javax.swing.JLabel();
         BtnTambah = new javax.swing.JButton();
-        BtnEdit = new javax.swing.JButton();
         BtnHapus = new javax.swing.JButton();
         BtnSimpan = new javax.swing.JButton();
+        BtnSimpan1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         tableMahasiswa.setModel(new javax.swing.table.DefaultTableModel(
                 new Object[][] {
@@ -72,6 +74,8 @@ public class PanelMahasiswa extends javax.swing.JPanel {
 
         LabelNama.setText("Nama");
 
+        BtnTambah.setBackground(new java.awt.Color(102, 255, 51));
+        BtnTambah.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
         BtnTambah.setText("Tambah");
         BtnTambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,13 +83,8 @@ public class PanelMahasiswa extends javax.swing.JPanel {
             }
         });
 
-        BtnEdit.setText("Edit");
-        BtnEdit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnEditActionPerformed(evt);
-            }
-        });
-
+        BtnHapus.setBackground(new java.awt.Color(102, 255, 51));
+        BtnHapus.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
         BtnHapus.setText("Hapus");
         BtnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +92,8 @@ public class PanelMahasiswa extends javax.swing.JPanel {
             }
         });
 
+        BtnSimpan.setBackground(new java.awt.Color(0, 51, 102));
+        BtnSimpan.setForeground(new java.awt.Color(255, 255, 255));
         BtnSimpan.setText("Simpan");
         BtnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,73 +101,103 @@ public class PanelMahasiswa extends javax.swing.JPanel {
             }
         });
 
+        BtnSimpan1.setBackground(new java.awt.Color(0, 51, 102));
+        BtnSimpan1.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSimpan1.setText("Edit");
+        BtnSimpan1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSimpan1ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Lucida Fax", 0, 18)); // NOI18N
+        jLabel1.setText("Daftar Mahasiswa");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 389,
+                                                Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(jLabel1)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout
+                                                .createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addGroup(layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(BtnTambah, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(BtnSimpan1))
+                                                .addGap(32, 32, 32)
+                                                .addGroup(layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+                                                                false)
+                                                        .addComponent(BtnSimpan, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(BtnHapus, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGap(12, 12, 12))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(8, 8, 8)
                                                 .addGroup(layout
                                                         .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addGroup(layout.createParallelGroup(
-                                                                        javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(FieldNim)
-                                                                        .addComponent(FieldNama))
-                                                                .addContainerGap())
+                                                                .addComponent(LabelNama)
+                                                                .addGap(0, 0, Short.MAX_VALUE))
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addGroup(layout.createParallelGroup(
                                                                         javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(NIM)
-                                                                        .addComponent(LabelNama))
-                                                                .addGap(0, 0, Short.MAX_VALUE))))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout
-                                                .createSequentialGroup()
-                                                .addGroup(layout
-                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout
-                                                                .createSequentialGroup()
-                                                                .addPreferredGap(
-                                                                        javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-                                                                        11, Short.MAX_VALUE)
-                                                                .addComponent(BtnTambah)
-                                                                .addGap(12, 12, 12)
-                                                                .addComponent(BtnEdit))
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addPreferredGap(
-                                                                        javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-                                                                        12, Short.MAX_VALUE)
-                                                                .addComponent(BtnHapus)
-                                                                .addGap(12, 12, 12)
-                                                                .addComponent(BtnSimpan)))
-                                                .addGap(10, 10, 10)))));
+                                                                        .addComponent(FieldNim,
+                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                        .addComponent(FieldNama)
+                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                .addComponent(NIM)
+                                                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                                                .addContainerGap()))))));
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(NIM)
-                                .addGap(7, 7, 7)
-                                .addComponent(FieldNim, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1)
+                                        .addComponent(NIM, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(LabelNama)
-                                .addGap(7, 7, 7)
-                                .addComponent(FieldNama, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(BtnTambah)
-                                        .addComponent(BtnEdit))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(BtnHapus)
-                                        .addComponent(BtnSimpan))
-                                .addContainerGap(140, Short.MAX_VALUE)));
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(FieldNim, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(1, 1, 1)
+                                                .addComponent(LabelNama)
+                                                .addGap(7, 7, 7)
+                                                .addComponent(FieldNama, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(BtnTambah)
+                                                        .addComponent(BtnHapus))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(BtnSimpan)
+                                                        .addComponent(BtnSimpan1))
+                                                .addContainerGap(145, Short.MAX_VALUE))
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0,
+                                                Short.MAX_VALUE))));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BtnSimpan1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_BtnSimpan1ActionPerformed
+        editData(); // TODO add your handling code here:
+    }// GEN-LAST:event_BtnSimpan1ActionPerformed
 
     private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_BtnHapusActionPerformed
         hapusData();
@@ -182,19 +213,16 @@ public class PanelMahasiswa extends javax.swing.JPanel {
         clearForm();
     }
 
-    private void BtnEditActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_BtnEditActionPerformed
-        editData();
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnEdit;
     private javax.swing.JButton BtnHapus;
     private javax.swing.JButton BtnSimpan;
+    private javax.swing.JButton BtnSimpan1;
     private javax.swing.JButton BtnTambah;
     private javax.swing.JTextField FieldNama;
     private javax.swing.JTextField FieldNim;
     private javax.swing.JLabel LabelNama;
     private javax.swing.JLabel NIM;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tableMahasiswa;
     // End of variables declaration//GEN-END:variables
@@ -226,18 +254,24 @@ public class PanelMahasiswa extends javax.swing.JPanel {
 
         String sql = "INSERT INTO mahasiswa (NIM, Nama) VALUES (?, ?)";
 
-        try {
-            try (PreparedStatement st = con.prepareStatement(sql)) {
-                st.setString(1, nim);
-                st.setString(2, nama);
+        if (nim.isEmpty() || nama.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "NIM dan Nama harus diisi");
+            return;
 
-                st.executeUpdate();
+        } else {
+            try {
+                try (PreparedStatement st = con.prepareStatement(sql)) {
+                    st.setString(1, nim);
+                    st.setString(2, nama);
+
+                    st.executeUpdate();
+                }
+
+                loadData();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(this, "NIM sudah ada ");
             }
-
-            loadData();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Failed to add data: " + e.getMessage());
         }
     }
 

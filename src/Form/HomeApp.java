@@ -24,7 +24,7 @@ public class HomeApp extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         PanelHome = new javax.swing.JPanel();
@@ -37,7 +37,7 @@ public class HomeApp extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        PanelHome.setBackground(new java.awt.Color(255, 255, 255));
+        PanelHome.setBackground(new java.awt.Color(204, 204, 204));
         PanelHome.setPreferredSize(new java.awt.Dimension(750, 450));
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
@@ -55,6 +55,7 @@ public class HomeApp extends javax.swing.JFrame {
         btnHadir.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
         btnHadir.setForeground(new java.awt.Color(255, 255, 255));
         btnHadir.setText("Hadir");
+        btnHadir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHadir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHadirActionPerformed(evt);
@@ -70,47 +71,42 @@ public class HomeApp extends javax.swing.JFrame {
         javax.swing.GroupLayout PanelHomeLayout = new javax.swing.GroupLayout(PanelHome);
         PanelHome.setLayout(PanelHomeLayout);
         PanelHomeLayout.setHorizontalGroup(
-                PanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(PanelHomeLayout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(fNim, javax.swing.GroupLayout.PREFERRED_SIZE, 200,
-                                        javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(PanelHomeLayout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel2)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addComponent(namaMatkul, javax.swing.GroupLayout.Alignment.TRAILING,
-                                javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE,
-                                Short.MAX_VALUE)
-                        .addComponent(namaMatkul1, javax.swing.GroupLayout.Alignment.TRAILING,
-                                javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE,
-                                Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelHomeLayout.createSequentialGroup()
-                                .addContainerGap(333, Short.MAX_VALUE)
-                                .addComponent(btnHadir)
-                                .addGap(327, 327, 327))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelHomeLayout.createSequentialGroup()
-                                .addComponent(NamaMhs, javax.swing.GroupLayout.DEFAULT_SIZE,
-                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addContainerGap()));
+            PanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelHomeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(fNim, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(PanelHomeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(namaMatkul, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(namaMatkul1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelHomeLayout.createSequentialGroup()
+                .addContainerGap(333, Short.MAX_VALUE)
+                .addComponent(btnHadir)
+                .addGap(327, 327, 327))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelHomeLayout.createSequentialGroup()
+                .addComponent(NamaMhs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
         PanelHomeLayout.setVerticalGroup(
-                PanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(PanelHomeLayout.createSequentialGroup()
-                                .addGap(75, 75, 75)
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(namaMatkul)
-                                .addGap(37, 37, 37)
-                                .addComponent(namaMatkul1)
-                                .addGap(12, 12, 12)
-                                .addComponent(fNim, javax.swing.GroupLayout.PREFERRED_SIZE, 33,
-                                        javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnHadir)
-                                .addGap(24, 24, 24)
-                                .addComponent(NamaMhs)
-                                .addGap(88, 88, 88)));
+            PanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelHomeLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(namaMatkul)
+                .addGap(37, 37, 37)
+                .addComponent(namaMatkul1)
+                .addGap(12, 12, 12)
+                .addComponent(fNim, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnHadir)
+                .addGap(24, 24, 24)
+                .addComponent(NamaMhs)
+                .addGap(88, 88, 88))
+        );
 
         getContentPane().add(PanelHome, java.awt.BorderLayout.CENTER);
 
